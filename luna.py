@@ -1,9 +1,8 @@
-import aiohttp
 import asyncio
 import re
-from config import bot_token, owner_id, bot_id
+from config import bot_token, owner_id, bot_id, ARQ_API_BASE_URL as ARQ_API
 from pyrogram import Client, filters
-
+from Python_ARQ import ARQ
 
 luna = Client(
     ":memory:",
@@ -12,22 +11,24 @@ luna = Client(
     api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e",
 )
 
+arq = ARQ(ARQ_API)
+
 blacklisted = []
 mode = None
 
+
 async def getresp(query):
-    url = f"https://lunabot.tech/?query={query}"
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url) as res:
-            res = await res.json()
-            text = res["response"]
-            return text
+    luna = await arq.luna(query)
+    response = luna.response
+    return response
+
 
 @luna.on_message(filters.command("repo") & ~filters.edited)
 async def repo(_, message):
     await message.reply_text(
         "[Github](https://github.com/thehamkercat/LunaChatBot)"
         + " | [Group](t.me/PatheticProgrammers)", disable_web_page_preview=True)
+
 
 @luna.on_message(filters.command("help") & ~filters.edited)
 async def start(_, message):
@@ -161,4 +162,3 @@ print(
 
 
 luna.run()
-
