@@ -3,15 +3,15 @@
   "description": "A telegram bot To Download Youtube Files ",
   "logo": "https://telegra.ph/file/6a3b1febade2313dd0dca.jpg",
   "keywords": [
-    "Youtube","YoutubeDownloader"
+    "Chatbot","LunaChatBot"
   ],
-  "repository": "https://github.com/aryanvikash/Youtube-Downloader-Bot",
-  "success_url": "https://t.me/youtubdlbot",
-  "website": "https://github.com/aryanvikash/Youtube-Downloader-Bot",
+  "repository": "https://github.com/mptelepro/LunaChatBot",
+  "success_url": "https://t.me/Babe_robot",
+  "website": "https://github.com/mptelepro/LunaChatBot",
   "env": {
-        "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
-        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
-        "BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true}
+        "OWNER_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
+        "BOT_TOKEN": {"description": "Get this value from https://my.telegram.org" , "required": true},
+        "BOT_ID": {"description": "Get Bot Token From BotFather Bot","required": true}
   },
       "buildpacks": [
         {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
