@@ -1,3 +1,3 @@
-owner_id = 1243703097
-bot_token = "16901971:AAFqdM_SQE1PB2P1xLr67k"
-bot_id = 1663901971
+owner_id = 1575148105
+bot_token = "1582636407:AAGuKzkSdzblLiJKqfPbJ9tFeGQKPi7h_PM"
+bot_id = 1582636407
