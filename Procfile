@@ -1,1 +1,1 @@
-worker: python3 -m LunaChatBot
+worker: python3 -m chatbot
