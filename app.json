@@ -3,15 +3,15 @@
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
       "value": "ANYTHING"
     },
-    "TG_BOT_TOKEN": {
+    "bot_token": {
       "description": "Your bot token, as a string.",
       "value": ""
     },
-    "CHAT_BASE_TOKEN": {
-      "description": "Your chat base token, as a string.",
+    "api_id": {
+      "description": "Get this value from https://my.telegram.org",
       "value": ""
     },
-    "APP_ID": {
+    "api_hash": {
       "description": "Get this value from https://my.telegram.org",
       "value": ""
     },
