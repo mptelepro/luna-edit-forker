@@ -20,4 +20,4 @@ Public Instance Of This Bot Can Be Found On Telegram As [@LunaChatBot](https://t
 5. Edit `config.ini` with your own values.
 6. Run with `python3 luna.py`
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mptelepro/LunaChatBot/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mptelepro/luna-edit-forker)
